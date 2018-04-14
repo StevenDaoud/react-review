@@ -38,7 +38,7 @@ class TacoImagePage extends Component {
 
         let query = this.props.match.params.id || "tacos";
         
-        Axios.get(`http://api.giphy.com/v1/gifs/search?q=${query}&api_key=4ovyp4eoD6cyCcEd5vj0ksosb8fEULnM&limit=5`).then((res)=>{
+        Axios.get(`https://api.giphy.com/v1/gifs/search?q=${query}&api_key=4ovyp4eoD6cyCcEd5vj0ksosb8fEULnM&limit=5`).then((res)=>{
     
             this.setState({
                 isReady : true,
